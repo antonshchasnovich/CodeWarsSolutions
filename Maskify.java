@@ -18,9 +18,9 @@ Maskify.Maskify("Nananananananananananananananana Batman!"); // should return "#
 
 public class Maskify {
     public static String maskify(String str) {
-        if (str.length() < 5)return str;
+        if (str.length() < 5) return str;
         StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < str.length() - 4; i++){
+        for (int i = 0; i < str.length() - 4; i++) {
             stringBuilder.append("#");
         }
         stringBuilder.append(str.substring(str.length() - 4));

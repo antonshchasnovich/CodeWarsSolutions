@@ -24,12 +24,12 @@ h = 3, bounce = 1, window = 1.5, result is -1 (Condition 2) not fulfilled).
 
 public class BouncingBall {
     public static int bouncingBall(double h, double bounce, double window) {
-        if(h < 0 || bounce <= 0 || bounce >= 1 || window >= h)return -1;
+        if (h < 0 || bounce <= 0 || bounce >= 1 || window >= h) return -1;
         int count = 1;
         double hight = h;
-        while (hight > window){
+        while (hight > window) {
             hight *= bounce;
-            if (hight > window)count += 2;
+            if (hight > window) count += 2;
         }
         return count;
     }

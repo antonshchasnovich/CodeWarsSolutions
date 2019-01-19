@@ -26,15 +26,15 @@ Enjoy it!!*/
 public class SumDigPower {
     public static List<Long> sumDigPow(long a, long b) {
         List<Long> result = new ArrayList<>();
-        for(long i = a; i <= b; i++){
+        for (long i = a; i <= b; i++) {
             String strValue = String.valueOf(i);
             char[] numerals = strValue.toCharArray();
             long summ = 0;
-            for (int index = 0; index < numerals.length; index++ ) {
+            for (int index = 0; index < numerals.length; index++) {
                 short s = Short.valueOf(String.valueOf(numerals[index]));
-                 summ += Math.pow(s, index+1);
+                summ += Math.pow(s, index + 1);
             }
-            if (summ == i){
+            if (summ == i) {
                 result.add(i);
             }
         }

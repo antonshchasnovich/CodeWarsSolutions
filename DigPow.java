@@ -19,7 +19,7 @@ public class DigPow {
     }
 
     public static long digPow(int n, int p) {
-        if (n > 0 && p > 0){
+        if (n > 0 && p > 0) {
             ArrayList<Integer> digits = new ArrayList();
             int num = n / 10;
             int ost = n % 10;
@@ -36,7 +36,7 @@ public class DigPow {
                 power++;
             }
             int res = summ / n;
-            if (res > 0 && res*n == summ) {
+            if (res > 0 && res * n == summ) {
                 return res;
             }
         }

@@ -20,11 +20,11 @@ EnoughIsEnough.deleteNth(new int[] {1,1,3,3,7,2,2,2,2}, 3) // return [1, 1, 3, 3
  */
 public class EnoughIsEnough {
     public static int[] deleteNth(int[] elements, int maxOccurrences) {
-        if (maxOccurrences == 0)return new int[0];
+        if (maxOccurrences == 0) return new int[0];
         HashMap<Integer, Integer> counts = new HashMap<>();
         ArrayList<Integer> result = new ArrayList<>();
-        for (int e:elements
-             ) {
+        for (int e : elements
+        ) {
             if (!counts.containsKey(e)) {
                 counts.put(e, 1);
                 result.add(e);
@@ -34,7 +34,7 @@ public class EnoughIsEnough {
             }
         }
         int[] resultInArray = new int[result.size()];
-        for (int i = 0; i < result.size(); i++){
+        for (int i = 0; i < result.size(); i++) {
             resultInArray[i] = result.get(i);
         }
         return resultInArray;
